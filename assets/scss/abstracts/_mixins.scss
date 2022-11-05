@@ -1,0 +1,41 @@
+// Fonts Config
+@mixin font-size-xxxl($weight) {
+  font-size: 2.5rem;
+  line-height: 150%;
+  font-weight: $weight;
+}
+@mixin font-size-xxl($weight) {
+  font-size: 2rem;
+  line-height: 150%;
+  font-weight: $weight;
+}
+@mixin font-size-xl($weight) {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: $weight;
+}
+@mixin font-size-lg($weight) {
+  font-size: 1.25rem;
+  line-height: 150%;
+  font-weight: $weight;
+}
+@mixin font-size-md($weight) {
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-weight: $weight;
+}
+@mixin font-size-sm($weight) {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: $weight;
+}
+@mixin font-size-xs($weight) {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: $weight;
+}
+@mixin font-size-xxs($weight) {
+  font-size: 0.75rem;
+  line-height: 150%;
+  font-weight: $weight;
+}

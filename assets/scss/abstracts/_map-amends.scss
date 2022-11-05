@@ -1,0 +1,24 @@
+@import "variables";
+
+// Custom maps
+$custom-colors: (
+  "primary-color-bg": $primary-color-bg,
+  "brand-color-primary-500": $brand-color-primary-500,
+  "brand-color-primary-400": $brand-color-primary-400,
+  "brand-color-primary-300": $brand-color-primary-300,
+  "brand-color-primary-200": $brand-color-primary-200,
+  "brand-color-primary-100": $brand-color-primary-100,
+  "brand-color-secondary-500": $brand-color-secondary-500,
+  "brand-color-secondary-400": $brand-color-secondary-400,
+  "brand-color-secondary-300": $brand-color-secondary-300,
+  "brand-color-secondary-200": $brand-color-secondary-200,
+  "brand-color-secondary-100": $brand-color-secondary-100,
+  "neutral-color-gray-500": $neutral-color-gray-500,
+  "neutral-color-gray-400": $neutral-color-gray-400,
+  "neutral-color-gray-300": $neutral-color-gray-300,
+  "neutral-color-gray-200": $neutral-color-gray-200,
+  "neutral-color-gray-100": $neutral-color-gray-100,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

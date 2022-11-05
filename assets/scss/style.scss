@@ -1,0 +1,59 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+// $font-weight-bold: 700;
+// $font-weight-semibold: 600;
+// $font-weight-regular: 400;
+
+:root {
+  --bs-body-font-family: 'Inter', sans-serif;
+}
+
+header {
+
+  nav {
+    img {
+      width: 90px;
+    }
+    .text-end {
+      button {
+        background-color: rgba(186, 214, 201, 0.12);
+        border: none;
+        padding: 12px 24px;
+        @include font-size-sm($font-weight-semibold);
+
+        &:hover {
+          background-color: rgba(186, 214, 201, 0.20);
+        }
+      }
+    }
+  }
+  .slide {
+    h1 {
+      @include font-size-xxxl($font-weight-bold);
+      max-width: 587px;
+      padding: 48px 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        padding-bottom: 24px;
+        @include font-size-md($font-weight-regular);
+
+        i {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+}
+
+.header-bottom {
+  background: $gradient-color;
+  height: 6px;
+}
