@@ -3,16 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-// $font-weight-bold: 700;
-// $font-weight-semibold: 600;
-// $font-weight-regular: 400;
-
 :root {
   --bs-body-font-family: 'Inter', sans-serif;
 }
 
 header {
-
   nav {
     img {
       width: 90px;
@@ -56,4 +51,82 @@ header {
 .header-bottom {
   background: $gradient-color;
   height: 6px;
+}
+
+main {
+  .feat-block {
+
+    .feat-box {
+      padding: 32px;
+      border-radius: 8px;
+      border: 1px solid $border-color;
+
+      img {
+        width: 56px;
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        @include font-size-lg($font-weight-bold);
+        color: $neutral-color-gray-500;
+      }
+
+      a {
+        text-decoration: none;
+        @include font-size-sm($font-weight-semibold);
+        color: $neutral-color-gray-200;
+
+        i {
+          transition: .3s;
+          margin-left: 3px;
+        }
+
+        &:hover {
+          i {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+  .tabs-block {
+    .tabs-title {
+      h3 {
+        @include font-size-xxl($font-weight-bold);
+        color: $neutral-color-gray-500;
+      }
+    }
+    .tabs-sub-title {
+      p {
+        @include font-size-sm($font-weight-regular);
+        color: $neutral-color-gray-400;
+      }
+    }
+    .tabs-container {
+      .nav-link {
+        background: none;
+        border: none;
+        border-left: 6px solid $border-button-tabs;
+        height: 72px;
+        width: 100%;
+        text-align: left;
+        color: $neutral-color-gray-100;
+        padding-left: 40px;
+
+        span {
+          margin-right: 10px;
+        }
+
+      }
+      .active {
+        border-color: $brand-color-primary-400;
+        font-weight: 700;
+        color: $neutral-color-gray-400;
+
+        span {
+          color: $neutral-color-gray-200;
+        }
+      }
+    }
+  }
 }
