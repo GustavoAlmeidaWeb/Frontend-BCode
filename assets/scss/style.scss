@@ -53,6 +53,82 @@ header {
         }
       }
     }
+    .form-contact {
+      background-color: $white;
+      border-radius: 8px;
+      box-shadow: 0px 8px 40px rgba(120, 133, 147, 0.24);
+      padding: 40px;
+      position: absolute;
+      height: 650px;
+      width: 490px;
+      z-index: 2;
+
+      h2 {
+        color: $neutral-color-gray-500;
+        margin: 0 0 8px;
+        @include font-size-xl($font-weight-bold);
+      }
+
+      p {
+        color: $neutral-color-gray-200;
+        margin: 0 0 32px;
+        @include font-size-sm($font-weight-regular);
+      }
+
+      form {
+        input[type="text"],
+        input[type="email"] {
+          border: none;
+          background: $bg-inputs;
+          border-radius: 6px;
+          padding-left: 20px;
+          margin-bottom: 15px;
+          height: 56px;
+          width: 100%;
+
+          &:focus {
+            background: $white;
+            outline: 1px solid $brand-color-primary-400;
+          }
+
+          &::placeholder {
+            color: $neutral-color-gray-200;
+          }
+        }
+        textarea {
+          border: none;
+          background: $bg-inputs;
+          border-radius: 6px;
+          padding: 16px 0 0 20px;
+          margin-bottom: 24px;
+          height: 112px;
+          width: 100%;
+          resize: none;
+
+          &:focus {
+            background: $white;
+            outline: 1px solid $brand-color-primary-400;
+          }
+
+          &::placeholder {
+            color: $neutral-color-gray-200;
+          }
+        }
+
+        button {
+          color: $white;
+          margin-bottom: 28px;
+          height: 64px;
+          width: 100%;
+          @include font-size-sm($font-weight-semibold);
+        }
+
+        p {
+          color: $neutral-color-gray-200;
+          @include font-size-xxs($font-weight-regular);
+        }
+      }
+    }
   }
   &::after {
     content: '';
@@ -66,6 +142,8 @@ header {
 }
 
 main {
+  margin-top: 110px;
+
   .feat-block {
 
     .feat-box {
@@ -185,6 +263,7 @@ main {
   .carousel-container {
 
     padding-left: 40px;
+    border-bottom: 1px solid rgba(255,255,255, .12);
 
     .carousel-words {
       color: $white;
@@ -211,10 +290,14 @@ main {
     }
   }
   .about-us {
+    background: linear-gradient(180deg, rgba(32,54,90,1) 0%, rgba(23,34,52,1) 100%);
     position: relative;
     height: 600px;
 
     .text-about-us {
+      img{
+        margin-bottom: 40px;
+      }
       h2 {
         color: $white;
         @include font-size-xxl($font-weight-bold);
@@ -231,9 +314,52 @@ main {
     box-shadow: 0px 8px 40px rgba(120, 133, 147, 0.16);
     height: 150px;
     margin-top: -75px;
+    padding: 35px 40px 40px;
     position: absolute;
     left: 0;
     right: 0;
+
+    .news-text {
+      h3 {
+        color: $neutral-color-gray-400;
+        margin: 0 0 8px;
+        @include font-size-xl($font-weight-bold);
+      }
+      p {
+        color: $neutral-color-gray-200;
+        @include font-size-sm($font-weight-regular);
+      }
+    }
+    .news-form {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      form {
+        input[type="email"] {
+          border: none;
+          background: $bg-inputs;
+          border-radius: 6px;
+          padding-left: 20px;
+          margin-right: 8px;
+          height: 56px;
+          width: 315px;
+
+          &:focus {
+            background: $white;
+            outline: 1px solid $brand-color-primary-400;
+          }
+
+          &::placeholder {
+            color: $neutral-color-gray-200;
+          }
+        }
+        button {
+          color: $white;
+          padding: 16px 24px;
+          @include font-size-sm($font-weight-semibold);
+        }
+      }
+    }
   }
 }
 
