@@ -12935,25 +12935,31 @@ header nav .text-end button {
 header nav .text-end button:hover {
   background-color: rgba(186, 214, 201, 0.2);
 }
-header .slide h1, header .slide .h1 {
+header .slide {
+  padding-bottom: 80px;
+}
+header .slide .text-slide {
+  border-bottom: 1.2px solid #AAB5C1;
+}
+header .slide .text-slide h1, header .slide .text-slide .h1 {
   font-size: 2.5rem;
   line-height: 150%;
   font-weight: 700;
   max-width: 587px;
   padding: 48px 0;
 }
-header .slide ul {
+header .slide .text-slide ul {
   margin: 0;
   padding: 0;
 }
-header .slide ul li {
+header .slide .text-slide ul li {
   list-style: none;
   padding-bottom: 24px;
   font-size: 1.125rem;
   line-height: 150%;
   font-weight: 400;
 }
-header .slide ul li i {
+header .slide .text-slide ul li i {
   margin-right: 24px;
 }
 header::after {
@@ -13033,6 +13039,43 @@ main .tabs-block .tabs-container .active {
 main .tabs-block .tabs-container .active span {
   color: #808D9D;
 }
+main .tabs-block .tabs-container .tab-content img {
+  max-width: 430px;
+  max-height: 100%;
+}
+main .tabs-block .tabs-container .tab-content .w-500 {
+  max-width: 500px;
+}
+main .tabs-block .tabs-container .tab-content .service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .tabs-block .tabs-container .tab-content .service-text h2, main .tabs-block .tabs-container .tab-content .service-text .h2 {
+  color: #2E353F;
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 700;
+}
+main .tabs-block .tabs-container .tab-content .service-text p {
+  color: #808D9D;
+  margin: 0 0 70px;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+main .tabs-block .tabs-container .tab-content .service-text button {
+  color: #65BA91;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  width: 205px;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 600;
+}
 main .carousel-container {
   padding-left: 40px;
 }
@@ -13086,7 +13129,57 @@ main .newsletter {
 
 footer {
   background-color: #FFF;
-  height: 570px;
+}
+footer .links h3, footer .links .h3 {
+  color: #465261;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+footer .links p {
+  margin: 0 0 20px;
+  color: #808D9D;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+footer .links ul {
+  padding: 0;
+}
+footer .links ul li {
+  color: #808D9D;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+  list-style: none;
+  margin: 0 0 20px;
+}
+footer .links ul li .fa-whatsapp {
+  font-size: 19px;
+}
+footer .links .social-links ul li {
+  font-size: 18px;
+  border: 1px solid #E4E8EC;
+  border-radius: 6px;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+footer .links .social-links ul li i {
+  color: #4285F4;
+}
+footer .copyright {
+  border-top: 1px solid #E4E8EC;
+}
+footer .copyright p {
+  color: #AAB5C1;
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
