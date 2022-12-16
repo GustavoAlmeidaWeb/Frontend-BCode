@@ -171,6 +171,32 @@ main {
   }
   .about-us {
     position: relative;
-    height: 737px;
+    height: 600px;
+
+    .text-about-us {
+      h2 {
+        color: $white;
+        @include font-size-xxl($font-weight-bold);
+      }
+      p {
+        color: $neutral-color-gray-100;
+        @include font-size-sm($font-weight-regular);
+      }
+    }
   }
+  .newsletter {
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 8px 40px rgba(120, 133, 147, 0.16);
+    height: 150px;
+    margin-top: -75px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+footer {
+  background-color: $white;
+  height: 570px;
 }

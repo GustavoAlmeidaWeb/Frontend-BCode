@@ -13059,7 +13059,34 @@ main .carousel-container .carousel-words div img {
 }
 main .about-us {
   position: relative;
-  height: 737px;
+  height: 600px;
+}
+main .about-us .text-about-us h2, main .about-us .text-about-us .h2 {
+  color: #FFF;
+  font-size: 2rem;
+  line-height: 150%;
+  font-weight: 700;
+}
+main .about-us .text-about-us p {
+  color: #AAB5C1;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+main .newsletter {
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0px 8px 40px rgba(120, 133, 147, 0.16);
+  height: 150px;
+  margin-top: -75px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  background-color: #FFF;
+  height: 570px;
 }
 
 /*# sourceMappingURL=style.css.map */
