@@ -28,3 +28,8 @@ Acesse a pasta "/assets" de dentro do projeto no terminal e rode o seguinte coma
 sass --watch scss/config.scss:css/style.css
 ```
 
+O único arquivo de SCSS que deve ser alterado é o style.scss.
+
+## 4º Passo - Plugin VS Code
+
+Uma dica para melhor produtividade instalar o plugin [Live Server e](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) rodar no arquivo index.html.
