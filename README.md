@@ -4,7 +4,7 @@
 
 ## 1º Passo - Instalação das dependências do projeto
 
-Execute o compando abaixo na pasta raiz do projeto:
+Execute o comando abaixo na pasta raiz do projeto:
 
 ```
 npm install
