@@ -388,6 +388,15 @@ footer {
         .fa-whatsapp {
           font-size: 19px;
         }
+
+        a {
+          color: $neutral-color-gray-200;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
     .social-links {

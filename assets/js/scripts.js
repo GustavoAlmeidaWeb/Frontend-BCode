@@ -3,7 +3,8 @@ $('.carousel-words').slick({
   arrows: false,
   dots: false,
   infinite: true,
-  speed: 1000,
+  autoplaySpeed: 1000,
+  speed: 2000,
   slidesToShow: 5,
   variableWidth: true,
 });
